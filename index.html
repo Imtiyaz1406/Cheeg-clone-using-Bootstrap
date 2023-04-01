@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheeg Clone</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light m-2 sticky-top ">
+      <div class="container">
+        <a class="navbar-brand fw-bolder fs-3 text-primary" href="#">Cheeg</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto ms-auto  mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active fw-bold " aria-current="page" href="#">Books <svg aria-hidden="true"
+                  role="presentation" pointing="down" data-test="landing-page-header-submenu-button-icon-0"
+                  viewBox="0 0 48 48" height="16" width="16"
+                  class="icon__Icon-sc-18q4eit-0 ChevronIcon__Chevron-jfyegr-0 jwvcTV"
+                  preserveAspectRatio="xMidYMid meet" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M23.99 35.11C23.788 35.1116 23.5879 35.0716 23.4021 34.9925C23.2162 34.9133 23.0488 34.7968 22.91 34.6501L4.57003 15.45C4.42802 15.3087 4.31576 15.1405 4.23983 14.9551C4.1639 14.7698 4.1258 14.5712 4.12789 14.3709C4.12998 14.1706 4.17225 13.9727 4.25203 13.789C4.33182 13.6053 4.44756 13.4394 4.59249 13.3012C4.73742 13.1629 4.90851 13.0551 5.09578 12.984C5.28306 12.913 5.68282 12.8876 5.68282 12.8876L42.3171 12.8476C42.3171 12.8476 42.7169 12.873 42.9041 12.944C43.0914 13.015 43.2626 13.1229 43.4076 13.2611C43.5525 13.3994 43.6682 13.5653 43.748 13.7491C43.8278 13.9328 43.8701 14.1306 43.8722 14.3308C43.8742 14.5311 43.8361 14.7298 43.7602 14.9152C43.6843 15.1005 43.572 15.2688 43.43 15.4101L25.08 34.6501C24.939 34.7966 24.7696 34.9129 24.5822 34.992C24.3949 35.0711 24.1933 35.1112 23.99 35.11Z"
+                    role="presentation" class="sc-bdnxRM wolpi"></path>
+                </svg></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" aria-current="page" href="#">Study <svg aria-hidden="true"
+                  role="presentation" pointing="down" data-test="landing-page-header-submenu-button-icon-0"
+                  viewBox="0 0 48 48" height="16" width="16"
+                  class="icon__Icon-sc-18q4eit-0 ChevronIcon__Chevron-jfyegr-0 jwvcTV"
+                  preserveAspectRatio="xMidYMid meet" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M23.99 35.11C23.788 35.1116 23.5879 35.0716 23.4021 34.9925C23.2162 34.9133 23.0488 34.7968 22.91 34.6501L4.57003 15.45C4.42802 15.3087 4.31576 15.1405 4.23983 14.9551C4.1639 14.7698 4.1258 14.5712 4.12789 14.3709C4.12998 14.1706 4.17225 13.9727 4.25203 13.789C4.33182 13.6053 4.44756 13.4394 4.59249 13.3012C4.73742 13.1629 4.90851 13.0551 5.09578 12.984C5.28306 12.913 5.68282 12.8876 5.68282 12.8876L42.3171 12.8476C42.3171 12.8476 42.7169 12.873 42.9041 12.944C43.0914 13.015 43.2626 13.1229 43.4076 13.2611C43.5525 13.3994 43.6682 13.5653 43.748 13.7491C43.8278 13.9328 43.8701 14.1306 43.8722 14.3308C43.8742 14.5311 43.8361 14.7298 43.7602 14.9152C43.6843 15.1005 43.572 15.2688 43.43 15.4101L25.08 34.6501C24.939 34.7966 24.7696 34.9129 24.5822 34.992C24.3949 35.0711 24.1933 35.1112 23.99 35.11Z"
+                    role="presentation" class="sc-bdnxRM wolpi"></path>
+                </svg></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" aria-current="page" href="#">Carrer <svg aria-hidden="true"
+                  role="presentation" pointing="down" data-test="landing-page-header-submenu-button-icon-0"
+                  viewBox="0 0 48 48" height="16" width="16"
+                  class="icon__Icon-sc-18q4eit-0 ChevronIcon__Chevron-jfyegr-0 jwvcTV"
+                  preserveAspectRatio="xMidYMid meet" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M23.99 35.11C23.788 35.1116 23.5879 35.0716 23.4021 34.9925C23.2162 34.9133 23.0488 34.7968 22.91 34.6501L4.57003 15.45C4.42802 15.3087 4.31576 15.1405 4.23983 14.9551C4.1639 14.7698 4.1258 14.5712 4.12789 14.3709C4.12998 14.1706 4.17225 13.9727 4.25203 13.789C4.33182 13.6053 4.44756 13.4394 4.59249 13.3012C4.73742 13.1629 4.90851 13.0551 5.09578 12.984C5.28306 12.913 5.68282 12.8876 5.68282 12.8876L42.3171 12.8476C42.3171 12.8476 42.7169 12.873 42.9041 12.944C43.0914 13.015 43.2626 13.1229 43.4076 13.2611C43.5525 13.3994 43.6682 13.5653 43.748 13.7491C43.8278 13.9328 43.8701 14.1306 43.8722 14.3308C43.8742 14.5311 43.8361 14.7298 43.7602 14.9152C43.6843 15.1005 43.572 15.2688 43.43 15.4101L25.08 34.6501C24.939 34.7966 24.7696 34.9129 24.5822 34.992C24.3949 35.0711 24.1933 35.1112 23.99 35.11Z"
+                    role="presentation" class="sc-bdnxRM wolpi"></path>
+                </svg></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" aria-current="page" href="#">Life <svg aria-hidden="true"
+                  role="presentation" pointing="down" data-test="landing-page-header-submenu-button-icon-0"
+                  viewBox="0 0 48 48" height="16" width="16"
+                  class="icon__Icon-sc-18q4eit-0 ChevronIcon__Chevron-jfyegr-0 jwvcTV"
+                  preserveAspectRatio="xMidYMid meet" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M23.99 35.11C23.788 35.1116 23.5879 35.0716 23.4021 34.9925C23.2162 34.9133 23.0488 34.7968 22.91 34.6501L4.57003 15.45C4.42802 15.3087 4.31576 15.1405 4.23983 14.9551C4.1639 14.7698 4.1258 14.5712 4.12789 14.3709C4.12998 14.1706 4.17225 13.9727 4.25203 13.789C4.33182 13.6053 4.44756 13.4394 4.59249 13.3012C4.73742 13.1629 4.90851 13.0551 5.09578 12.984C5.28306 12.913 5.68282 12.8876 5.68282 12.8876L42.3171 12.8476C42.3171 12.8476 42.7169 12.873 42.9041 12.944C43.0914 13.015 43.2626 13.1229 43.4076 13.2611C43.5525 13.3994 43.6682 13.5653 43.748 13.7491C43.8278 13.9328 43.8701 14.1306 43.8722 14.3308C43.8742 14.5311 43.8361 14.7298 43.7602 14.9152C43.6843 15.1005 43.572 15.2688 43.43 15.4101L25.08 34.6501C24.939 34.7966 24.7696 34.9129 24.5822 34.992C24.3949 35.0711 24.1933 35.1112 23.99 35.11Z"
+                    role="presentation" class="sc-bdnxRM wolpi"></path>
+                </svg></a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item  ">
+                <a class="nav-link active fw-bold nav-sep " aria-current="page" href="#">For Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold nav-sep" aria-current="page" href="#">Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold nav-sep" aria-current="page" href="#">Sign in</a>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <section class="hero-lg-screen">
+    <div class="hero">
+      <div class="content p-5 m-3">
+        <h1 class="fw-bold">Study help tailored to your courses</h1>
+        <div class="search-container">
+          <input type="search" class="search h-25 search-box" placeholder="Find solution to Your Home work! ">
+
+          <button class="btn btn-primary text-light fw-bold px-3  search-btn">Search</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero-mobile-screen">
+    <img src="./img/mobile.webp" alt="" class="img-fluid">
+    <h1 class="fw-bold text-center m-3">Study help tailored to your courses</h1>
+    <div class="search-container m-3">
+      <input type="search" class="search h-25  search-box" placeholder="Find solution to Your Home work! ">
+
+      <button class="btn btn-primary text-light fw-bold px-3 fs-5 search-btn">Search</button>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="container d-flex  justify-content-between my-4 ">
+      <h1 class="fw-bold fs-2">Expert learning support</h1>
+      <button class="btn btn-primary rounded-pill  px-4">Sign in</button>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mb-5 ">
+      <div class="row">
+        <h1 class="text-center fw-bold my-4">Study smarter & save on food</h1>
+        <div class="col-md-4 ">
+          <div class="card text-center h-100 ">
+            <img src="./img/2nd.webp" alt="">
+            <h1 class="fw-bold my-4 text-dark">Expert Q&As</h1>
+            <p class="px-5">Access millions of expert solutions designed for your best study sessions. Learn by seeing
+              each clear & concise step.</p>
+            <a href="link">Learn more<svg aria-label="Arrow" role="img" data-test="cta-arrow" pointing="right"
+                class=" icon__Icon-sc-18q4eit-0 ArrowIcon__Arrow-fr0lgn-0 hQiTEl bsBLyV cta-arrow" viewBox="0 0 48 48"
+                height="24" width="24" preserveAspectRatio="xMidYMid meet" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.0146 26.5799C33.7321 26.3014 33.3514 26.1454 32.9547 26.1454C32.5579 26.1454 32.1772 26.3014 31.8947 26.5799L25.5046 32.9699V11.4C25.5046 11.0022 25.3466 10.6206 25.0653 10.3393C24.784 10.058 24.4025 9.89999 24.0046 9.89999C23.6068 9.89999 23.2253 10.058 22.944 10.3393C22.6627 10.6206 22.5046 11.0022 22.5046 11.4V33.01L16.1046 26.62C15.9661 26.4797 15.801 26.3683 15.619 26.2923C15.4371 26.2163 15.2418 26.1771 15.0446 26.1771C14.8474 26.1771 14.6522 26.2163 14.4702 26.2923C14.2883 26.3683 14.1232 26.4797 13.9846 26.62C13.7062 26.9025 13.55 27.2833 13.55 27.68C13.55 28.0767 13.7062 28.4574 13.9846 28.74L22.9046 37.65C22.9546 37.71 23.0346 37.73 23.0946 37.78L23.2546 37.89C23.3446 37.89 23.4246 37.98 23.5146 38.01C23.6479 38.052 23.7854 38.0787 23.9247 38.0899H24.0046C24.2469 38.089 24.4854 38.0294 24.6996 37.9162C24.9138 37.803 25.0974 37.6397 25.2346 37.44L34.0146 28.66C34.2859 28.3818 34.4377 28.0085 34.4377 27.62C34.4377 27.2314 34.2859 26.8582 34.0146 26.5799Z"
+                  role="presentation" class="sc-bdnxRM wolpi"></path>
+              </svg></a>
+
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center h-100">
+            <img src="./img/3rd.webp" alt="">
+            <h1 class="fw-bold my-4 text-dark">Textbook Solutions</h1>
+            <p class="px-5">Understand your tough textbook problems. Walk through each part of the solution step by
+              step.</p>
+            <a href="link">Learn more<svg aria-label="Arrow" role="img" data-test="cta-arrow" pointing="right"
+                class="icon__Icon-sc-18q4eit-0 ArrowIcon__Arrow-fr0lgn-0 hQiTEl bsBLyV cta-arrow" viewBox="0 0 48 48"
+                height="24" width="24" preserveAspectRatio="xMidYMid meet" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.0146 26.5799C33.7321 26.3014 33.3514 26.1454 32.9547 26.1454C32.5579 26.1454 32.1772 26.3014 31.8947 26.5799L25.5046 32.9699V11.4C25.5046 11.0022 25.3466 10.6206 25.0653 10.3393C24.784 10.058 24.4025 9.89999 24.0046 9.89999C23.6068 9.89999 23.2253 10.058 22.944 10.3393C22.6627 10.6206 22.5046 11.0022 22.5046 11.4V33.01L16.1046 26.62C15.9661 26.4797 15.801 26.3683 15.619 26.2923C15.4371 26.2163 15.2418 26.1771 15.0446 26.1771C14.8474 26.1771 14.6522 26.2163 14.4702 26.2923C14.2883 26.3683 14.1232 26.4797 13.9846 26.62C13.7062 26.9025 13.55 27.2833 13.55 27.68C13.55 28.0767 13.7062 28.4574 13.9846 28.74L22.9046 37.65C22.9546 37.71 23.0346 37.73 23.0946 37.78L23.2546 37.89C23.3446 37.89 23.4246 37.98 23.5146 38.01C23.6479 38.052 23.7854 38.0787 23.9247 38.0899H24.0046C24.2469 38.089 24.4854 38.0294 24.6996 37.9162C24.9138 37.803 25.0974 37.6397 25.2346 37.44L34.0146 28.66C34.2859 28.3818 34.4377 28.0085 34.4377 27.62C34.4377 27.2314 34.2859 26.8582 34.0146 26.5799Z"
+                  role="presentation" class="sc-bdnxRM wolpi"></path>
+              </svg></a>
+
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img src="./img/4th.webp" alt="">
+            <h1 class="fw-bold fs-2 my-4 text-dark">FREE DashPass Student membership with your Chegg Study Pack1</h1>
+            <a href="link">Get Started<svg aria-label="Arrow" role="img" data-test="cta-arrow" pointing="right"
+                class=" icon__Icon-sc-18q4eit-0 ArrowIcon__Arrow-fr0lgn-0 hQiTEl bsBLyV cta-arrow" viewBox="0 0 48 48"
+                height="24" width="24" preserveAspectRatio="xMidYMid meet" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.0146 26.5799C33.7321 26.3014 33.3514 26.1454 32.9547 26.1454C32.5579 26.1454 32.1772 26.3014 31.8947 26.5799L25.5046 32.9699V11.4C25.5046 11.0022 25.3466 10.6206 25.0653 10.3393C24.784 10.058 24.4025 9.89999 24.0046 9.89999C23.6068 9.89999 23.2253 10.058 22.944 10.3393C22.6627 10.6206 22.5046 11.0022 22.5046 11.4V33.01L16.1046 26.62C15.9661 26.4797 15.801 26.3683 15.619 26.2923C15.4371 26.2163 15.2418 26.1771 15.0446 26.1771C14.8474 26.1771 14.6522 26.2163 14.4702 26.2923C14.2883 26.3683 14.1232 26.4797 13.9846 26.62C13.7062 26.9025 13.55 27.2833 13.55 27.68C13.55 28.0767 13.7062 28.4574 13.9846 28.74L22.9046 37.65C22.9546 37.71 23.0346 37.73 23.0946 37.78L23.2546 37.89C23.3446 37.89 23.4246 37.98 23.5146 38.01C23.6479 38.052 23.7854 38.0787 23.9247 38.0899H24.0046C24.2469 38.089 24.4854 38.0294 24.6996 37.9162C24.9138 37.803 25.0974 37.6397 25.2346 37.44L34.0146 28.66C34.2859 28.3818 34.4377 28.0085 34.4377 27.62C34.4377 27.2314 34.2859 26.8582 34.0146 26.5799Z"
+                  role="presentation" class="sc-bdnxRM wolpi"></path>
+              </svg></a>
+
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <button class="btn btn-primary rounded-pill px-4 fw-bold text-light fs-4 ">Sign in</button>
+        <p class="text-center fw-bold fs-1 text-primary my-5">94% of Chegg customers say they get better grades when
+          they use Chegg to understand their coursework2</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero-lg-screen-2">
+    <div class="second-hero m-4">
+      <div class="content p-5 m-5">
+        <h1 class="fw-bold">Designed for you</h1>
+        <p>Get a personalized dashboard that knows where you are in your courses and recommends what to study next.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero-mobile-screen-2">
+    <img src="./img/lapi for mobile screen.webp" alt="" class="img-fluid">
+    <h1 class="fw-bold text-center">Designed for you</h1>
+    <p class="px-3">Get a personalized dashboard that knows where you are in your courses and recommends what to study
+      next.</p>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <h1 class="text-center fw-bold my-4">Here for every moment</h1>
+        <div class="col-md-3 ">
+          <div class="card text-center h-100">
+            <img src="./img/6th.webp" alt="">
+            <h1 class="fw-bold fs-2 my-4 text-dark">Homework help</h1>
+            <p class="px-2">Study with 84+ million step-by-step explanations, Expert Q&As & math support.</p>
+            <a href="link">Learn More<svg aria-label="Arrow" role="img" data-test="cta-arrow" pointing="right"
+                class=" icon__Icon-sc-18q4eit-0 ArrowIcon__Arrow-fr0lgn-0 hQiTEl bsBLyV cta-arrow" viewBox="0 0 48 48"
+                height="24" width="24" preserveAspectRatio="xMidYMid meet" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.0146 26.5799C33.7321 26.3014 33.3514 26.1454 32.9547 26.1454C32.5579 26.1454 32.1772 26.3014 31.8947 26.5799L25.5046 32.9699V11.4C25.5046 11.0022 25.3466 10.6206 25.0653 10.3393C24.784 10.058 24.4025 9.89999 24.0046 9.89999C23.6068 9.89999 23.2253 10.058 22.944 10.3393C22.6627 10.6206 22.5046 11.0022 22.5046 11.4V33.01L16.1046 26.62C15.9661 26.4797 15.801 26.3683 15.619 26.2923C15.4371 26.2163 15.2418 26.1771 15.0446 26.1771C14.8474 26.1771 14.6522 26.2163 14.4702 26.2923C14.2883 26.3683 14.1232 26.4797 13.9846 26.62C13.7062 26.9025 13.55 27.2833 13.55 27.68C13.55 28.0767 13.7062 28.4574 13.9846 28.74L22.9046 37.65C22.9546 37.71 23.0346 37.73 23.0946 37.78L23.2546 37.89C23.3446 37.89 23.4246 37.98 23.5146 38.01C23.6479 38.052 23.7854 38.0787 23.9247 38.0899H24.0046C24.2469 38.089 24.4854 38.0294 24.6996 37.9162C24.9138 37.803 25.0974 37.6397 25.2346 37.44L34.0146 28.66C34.2859 28.3818 34.4377 28.0085 34.4377 27.62C34.4377 27.2314 34.2859 26.8582 34.0146 26.5799Z"
+                  role="presentation" class="sc-bdnxRM wolpi"></path>
+              </svg></a>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card text-center">
+            <img src="./img/7th.webp" alt="">
+            <h1 class="fw-bold fs-2 my-4 text-dark">Exam prep & practice</h1>
+            <p class="px-2">Figure out what you don’t know & get ready for test day with practice exams.3</p>
+            <a href="link">Learn More<svg aria-label="Arrow" role="img" data-test="cta-arrow" pointing="right"
+                class=" icon__Icon-sc-18q4eit-0 ArrowIcon__Arrow-fr0lgn-0 hQiTEl bsBLyV cta-arrow" viewBox="0 0 48 48"
+                height="24" width="24" preserveAspectRatio="xMidYMid meet" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.0146 26.5799C33.7321 26.3014 33.3514 26.1454 32.9547 26.1454C32.5579 26.1454 32.1772 26.3014 31.8947 26.5799L25.5046 32.9699V11.4C25.5046 11.0022 25.3466 10.6206 25.0653 10.3393C24.784 10.058 24.4025 9.89999 24.0046 9.89999C23.6068 9.89999 23.2253 10.058 22.944 10.3393C22.6627 10.6206 22.5046 11.0022 22.5046 11.4V33.01L16.1046 26.62C15.9661 26.4797 15.801 26.3683 15.619 26.2923C15.4371 26.2163 15.2418 26.1771 15.0446 26.1771C14.8474 26.1771 14.6522 26.2163 14.4702 26.2923C14.2883 26.3683 14.1232 26.4797 13.9846 26.62C13.7062 26.9025 13.55 27.2833 13.55 27.68C13.55 28.0767 13.7062 28.4574 13.9846 28.74L22.9046 37.65C22.9546 37.71 23.0346 37.73 23.0946 37.78L23.2546 37.89C23.3446 37.89 23.4246 37.98 23.5146 38.01C23.6479 38.052 23.7854 38.0787 23.9247 38.0899H24.0046C24.2469 38.089 24.4854 38.0294 24.6996 37.9162C24.9138 37.803 25.0974 37.6397 25.2346 37.44L34.0146 28.66C34.2859 28.3818 34.4377 28.0085 34.4377 27.62C34.4377 27.2314 34.2859 26.8582 34.0146 26.5799Z"
+                  role="presentation" class="sc-bdnxRM wolpi"></path>
+              </svg></a>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card text-center">
+            <img src="./img/8th.webp" alt="">
+            <h1 class="fw-bold fs-2 my-4 text-dark">Understand a topic</h1>
+            <p class="px-2">Simplify the toughest concepts with digestible topic breakdowns & videos.3.</p>
+            <a href="link">Learn More<svg aria-label="Arrow" role="img" data-test="cta-arrow" pointing="right"
+                class=" icon__Icon-sc-18q4eit-0 ArrowIcon__Arrow-fr0lgn-0 hQiTEl bsBLyV cta-arrow" viewBox="0 0 48 48"
+                height="24" width="24" preserveAspectRatio="xMidYMid meet" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.0146 26.5799C33.7321 26.3014 33.3514 26.1454 32.9547 26.1454C32.5579 26.1454 32.1772 26.3014 31.8947 26.5799L25.5046 32.9699V11.4C25.5046 11.0022 25.3466 10.6206 25.0653 10.3393C24.784 10.058 24.4025 9.89999 24.0046 9.89999C23.6068 9.89999 23.2253 10.058 22.944 10.3393C22.6627 10.6206 22.5046 11.0022 22.5046 11.4V33.01L16.1046 26.62C15.9661 26.4797 15.801 26.3683 15.619 26.2923C15.4371 26.2163 15.2418 26.1771 15.0446 26.1771C14.8474 26.1771 14.6522 26.2163 14.4702 26.2923C14.2883 26.3683 14.1232 26.4797 13.9846 26.62C13.7062 26.9025 13.55 27.2833 13.55 27.68C13.55 28.0767 13.7062 28.4574 13.9846 28.74L22.9046 37.65C22.9546 37.71 23.0346 37.73 23.0946 37.78L23.2546 37.89C23.3446 37.89 23.4246 37.98 23.5146 38.01C23.6479 38.052 23.7854 38.0787 23.9247 38.0899H24.0046C24.2469 38.089 24.4854 38.0294 24.6996 37.9162C24.9138 37.803 25.0974 37.6397 25.2346 37.44L34.0146 28.66C34.2859 28.3818 34.4377 28.0085 34.4377 27.62C34.4377 27.2314 34.2859 26.8582 34.0146 26.5799Z"
+                  role="presentation" class="sc-bdnxRM wolpi"></path>
+              </svg></a>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card text-center">
+            <div class="img-header">
+              <img src="./img/9th.webp" alt="" class="card-img">
+              <p class="tag">New experience!</p>
+
+            </div>
+            <h1 class="fw-bold fs-2 my-4 text-dark">Writing & citations</h1>
+            <p class="px-2">Find plagiarism checks, expert proofreading & instant citations all in one place.</p>
+            <a href="link">Learn More<svg aria-label="Arrow" role="img" data-test="cta-arrow" pointing="right"
+                class=" icon__Icon-sc-18q4eit-0 ArrowIcon__Arrow-fr0lgn-0 hQiTEl bsBLyV cta-arrow" viewBox="0 0 48 48"
+                height="24" width="24" preserveAspectRatio="xMidYMid meet" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.0146 26.5799C33.7321 26.3014 33.3514 26.1454 32.9547 26.1454C32.5579 26.1454 32.1772 26.3014 31.8947 26.5799L25.5046 32.9699V11.4C25.5046 11.0022 25.3466 10.6206 25.0653 10.3393C24.784 10.058 24.4025 9.89999 24.0046 9.89999C23.6068 9.89999 23.2253 10.058 22.944 10.3393C22.6627 10.6206 22.5046 11.0022 22.5046 11.4V33.01L16.1046 26.62C15.9661 26.4797 15.801 26.3683 15.619 26.2923C15.4371 26.2163 15.2418 26.1771 15.0446 26.1771C14.8474 26.1771 14.6522 26.2163 14.4702 26.2923C14.2883 26.3683 14.1232 26.4797 13.9846 26.62C13.7062 26.9025 13.55 27.2833 13.55 27.68C13.55 28.0767 13.7062 28.4574 13.9846 28.74L22.9046 37.65C22.9546 37.71 23.0346 37.73 23.0946 37.78L23.2546 37.89C23.3446 37.89 23.4246 37.98 23.5146 38.01C23.6479 38.052 23.7854 38.0787 23.9247 38.0899H24.0046C24.2469 38.089 24.4854 38.0294 24.6996 37.9162C24.9138 37.803 25.0974 37.6397 25.2346 37.44L34.0146 28.66C34.2859 28.3818 34.4377 28.0085 34.4377 27.62C34.4377 27.2314 34.2859 26.8582 34.0146 26.5799Z"
+                  role="presentation" class="sc-bdnxRM wolpi"></path>
+              </svg></a>
+
+          </div>
+        </div>
+      </div>
+      <div class="last-bt  w-25 m-auto my-5">
+        <button class=" btn btn-primary rounded-pill px-4 fw-bold text-light fs-4 ">Sign in</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h4 class="fw-bold fs-5 text-black my-4 course ">Course Help</h4>
+      <ul class=" d-flex list-unstyled flex-wrap">
+        <li class="fw-bold text-black">Biology:</li>
+        <li class="sep px-1">Biochemistry</li>
+        <li class="sep px-1"> Evolutionary Biology </li>
+        <li class="sep px-1"> Immunology </li>
+        <li class="sep px-1"> Cell Biology</li>
+        <li class="sep px-1"> Nutrition</li>
+        <li class="sep px-1"> General Biology</li>
+        <li class="sep px-1">Zoology</li>
+      </ul>
+
+      <ul class=" d-flex list-unstyled flex-wrap">
+        <li class="fw-bold text-black">Business: </li>
+        <li class="sep px-1">Finance</li>
+        <li class="sep px-1"> Economics</li>
+        <li class="sep px-1"> Accounting </li>
+        <li class="sep px-1"> Operations Management</li>
+      </ul>
+
+      <ul class=" d-flex list-unstyled flex-wrap">
+        <li class="fw-bold text-black">Engineering:</li>
+        <li class="sep px-1"> Computer Science </li>
+        <li class="sep px-1"> Electrical Engineering </li>
+        <li class="sep px-1"> Mechanical Engineering </li>
+        <li class="sep px-1"> Civil Engineering</li>
+      </ul>
+
+      <ul class=" d-flex list-unstyled flex-wrap">
+        <li class="fw-bold text-black">Math:</li>
+        <li class="sep px-1"> Algebra</li>
+        <li class="sep px-1"> Calculus </li>
+        <li class="sep px-1"> Statistics and Probability </li>
+        <li class="sep px-1"> Advanced Math </li>
+        <li class="sep px-1"> Other Math</li>
+        <li class="sep px-1"> Geometry</li>
+        <li class="sep px-1"> Trigonometry</li>
+        <li class="sep px-1"> Prealgebra</li>
+        <li class="sep px-1"> Precalculus</li>
+      </ul>
+
+      <ul class=" d-flex list-unstyled flex-wrap">
+        <li class="fw-bold text-black">Science:</li>
+        <li class="sep px-1"> Physics</li>
+        <li class="sep px-1"> Chemistry</li>
+      </ul>
+
+      <p class="fs-7">1.^ DashPass Student membership offer: promotion valid until 8/1/2023 for current Chegg Study Pack
+        subscribers who are at least 18 years old, reside in the U.S., and are enrolled in an accredited college or
+        university in the U.S. Access to one DashPass for Students Membership per Chegg Study Pack account holder. You
+        may only be enrolled in one DashPass plan at a time; current DashPass subscribers will need to cancel their
+        current subscription to redeem this offer. If you cancel your Chegg Study Pack subscription or upon termination
+        of the offer and 30 days’ notice from DoorDash, you will continue to be enrolled in the DashPass for Students
+        membership and will be charged the DashPass subscription auto-renews at $4.99/month after you cancel Chegg Study
+        Pack or upon 30 days’ notice DashPass for Students membership fee (plus any applicable taxes) on a recurring
+        basis until you cancel your DashPass for Students membership. Any payment method designated in your DoorDash
+        account may be charged. DashPass benefits apply only to eligible orders that meet the minimum subtotal
+        requirement listed on DoorDash for each participating merchant. Other fees (including service fee), taxes, and
+        gratuity may apply on your DashPass orders. Offer subject to change and may be modified or terminated at any
+        time. No cash value. Not transferable. See full offer terms and conditions here and full DashPass terms and
+        conditions here.</p>
+      <p class="fs-7">2.^ Chegg survey fielded between April 23-April 25, 2021 among customers who used Chegg Study and
+        Chegg Study Pack in Q1 2020 and Q2 2021. Respondent base (n=745) among approximately 144,000 invites. Individual
+        results may vary. Survey respondents (up to 500,000 respondents total) were entered into a drawing to win 1 of
+        10 $500 e-gift cards.</p>
+      <p class="fs-7">3. a b Not available for all subjects.</p>
+      <p class="fs-7">4.^ Calm Premium offer: This offer is provided at no cost to subscribers of Chegg Study Pack. No
+        cash value. Terms and Conditions apply. Please visit here for complete details.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid">
+      <div class="Question-Ans-Box">
+        <div class="heading bg-light-dark p-3">
+          <h2>Recently Asked Questions</h2>
+          <p>Expert help when you need it</p>
+        </div>
+        <div class="Questions p-2">
+          <div class="question mx-2  d-flex">
+            <b>Q:</b>
+            <p class="px-2 fs-7"> rectitier with center-1 rectifier with center-2 Single phase Full - wave rectifier_R
+              Single phase Full - wave rectifier_RC</p>
+          </div>
+          <div class="Answer mx-2  d-flex">
+            <b>A:</b>
+            <p class="px-2 fs-7 text-info">Answer </p>
+          </div>
+        </div>
+
+        <div class="Questions p-2">
+          <div class="question mx-2  d-flex">
+            <b>Q:</b>
+            <p class="px-2 fs-7"> (a) Prove that the following argument is invalid: \[ \begin{array}{l} (x)[A x \supset
+              B x] \\ (\exists x)[C x \cdot B x] \\ (\exists x)[C x \cdot \sim B x] \\ \there</p>
+          </div>
+          <div class="Answer mx-2  d-flex">
+            <b>A:</b>
+            <p class="px-2 fs-7 text-info">Answer </p>
+          </div>
+        </div>
+
+        <div class="Questions p-2">
+          <div class="question mx-2  d-flex">
+            <b>Q:</b>
+            <p class="px-2 fs-7"> Mapua is considering upgrading the capability of its computer, which has been bought 2
+              years ago at a cost of P10M with an annual operating cost of P1020479, and if</p>
+          </div>
+          <div class="Answer mx-2  d-flex">
+            <b>A:</b>
+            <p class="px-2 fs-7 text-info">Answer </p>
+          </div>
+        </div>
+        <div class="Questions p-2">
+          <div class="question mx-2  d-flex">
+            <b>Q:</b>
+            <p class="px-2 fs-7"> Health 24-7 is a gym and wellness centre in Camps Bay. The business sells annual gym
+              memberships and has a financial year-end of 31 May. You have been provided with</p>
+          </div>
+          <div class="Answer mx-2  d-flex">
+            <b>A:</b>
+            <p class="px-2 fs-7 text-info">Answer </p>
+          </div>
+        </div>
+        <div class="Questions p-2">
+          <div class="question mx-2  d-flex">
+            <b>Q:</b>
+            <p class="px-2 fs-7"> Given the half-wave rectifier with a free wheeling diode powe load, Select the most
+              accurate responses below:</p>
+          </div>
+          <div class="Answer mx-2  d-flex">
+            <b>A:</b>
+            <p class="px-2 fs-7 text-info">Answer </p>
+          </div>
+        </div>
+        <div class="Questions p-2">
+          <div class="question mx-2  d-flex">
+            <b>Q:</b>
+            <p class="px-2 fs-7"> Q9. All the fuses in the right diagram are BS88gG fuses. Suggest, with reasons,
+              ratings for fuses \( \mathrm{X} \& \mathrm{Y} \) for performing protection function a</p>
+          </div>
+          <div class="Answer mx-2  d-flex">
+            <b>A:</b>
+            <p class="px-2 fs-7 text-info">Answer </p>
+          </div>
+        </div>
+        <div class="Questions p-2">
+          <div class="question mx-2  d-flex">
+            <b>Q:</b>
+            <p class="px-2 fs-7">1) PROVIDE ESTIMATED TIME DURATION FOR EACH WORK ACTIVITY BASE ON WBD DIAGRAM BELOW
+              Station Equipment and Systems ├── 4.1. Elevators, Escalators, and Stairways │</p>
+          </div>
+          <div class="Answer mx-2  d-flex">
+            <b>A:</b>
+            <p class="px-2 fs-7 text-info">Answer </p>
+          </div>
+        </div>
+        <div class="Questions p-2">
+          <div class="question mx-2  d-flex">
+            <b>Q:</b>
+            <p class="px-2 fs-7"> Draw P&amp;ID diagram using Feedback and Cascade Control</p>
+          </div>
+          <div class="Answer mx-2  d-flex">
+            <b>A:</b>
+            <p class="px-2 fs-7 text-info">Answer </p>
+          </div>
+        </div>
+        <div class="Questions p-2">
+          <div class="question mx-2  d-flex">
+            <b>Q:</b>
+            <p class="px-2 fs-7">In Victoria, Keilor Auto Body2 has been well-known for renovating classic and sports
+              cars. In April, worked on five job orders, numbered 401 to 405 . Direct material</p>
+          </div>
+          <div class="Answer mx-2  d-flex">
+            <b>A:</b>
+            <p class="px-2 fs-7 text-info">Answer </p>
+          </div>
+        </div>
+        <div class="Questions p-2">
+          <div class="question mx-2  d-flex">
+            <b>Q:</b>
+            <p class="px-2 fs-7"> Given \( \mathrm{a}=9, \mathrm{~b}=4, c=3, d=4, e=4, f=6, g=3 \) and \( h= \) 3 , find
+              \( V_{0} \) (in \( V \) ) in the network below using linearity and the assumpt</p>
+          </div>
+          <div class="Answer mx-2  d-flex">
+            <b>A:</b>
+            <p class="px-2 fs-7 text-info">Answer </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-5 ">
+      <card>
+        <div class="row justify-content-between">
+          <h3 class="fw-bold fs-5">Chegg Products & Services</h3>
+          <div class="col-md-2 footer">
+            <p>Cheap Textbooks</p>
+            <p>Chegg Coupon</p>
+            <p>Chegg Life</p>
+            <p>Chegg Play</p>
+            <p>Chegg Study Help</p>
+            <p>Citation Generator</p>
+            <p>College Textbooks</p>
+            <p>Digital Access Codes</p>
+            <p>eTextbooks</p>
+            <p>Flashcards</p>
+
+          </div>
+          <div class="col-md-2 footer">
+            <p>Grammar Checker</p>
+            <p>Learn</p>
+            <p>Chegg Math Solver</p>
+            <p>Mobile Apps</p>
+            <p>Solutions Manual</p>
+            <p>Plagiarism Checker</p>
+            <p>Textbook Rental</p>
+            <p>Used Textbooks</p>
+            <p>Uversity</p>
+          </div>
+
+          <div class="col-md-2 footer">
+            <h3 class="fw-bold fs-5">Company</h3>
+            <p>About Chegg</p>
+            <p>Chegg For Good</p>
+            <p>College Marketing</p>
+            <p>Corporate Development</p>
+            <p>Investor Relations</p>
+            <p>Jobs</p>
+            <p>Join Our Affiliate Program</p>
+            <p>Media Center</p>
+            <p>Site Map</p>
+
+          </div>
+          <div class="col-md-2 footer">
+            <h3 class="fw-bold fs-5">Chegg Network</h3>
+            <p>Busuu</p>
+            <p>Citation Machine</p>
+            <p>EasyBib</p>
+            <p>Internships.com</p>
+            <p>Mathway</p>
+            <p>Thinkful</p>
+          </div>
+          <div class="col-md-2 footer">
+            <h3 class="fw-bold fs-5">Customer Service</h3>
+            <p>Give Us Feedback</p>
+            <p>Customer Service</p>
+            <p>Customer Service</p>
+            <h3 class="fw-bold fs-5">Educators</h3>
+            <p>Academic Integrity</p>
+            <p>Honor Shield</p>
+            <p>Institute of Digital Learning</p>
+          </div>
+
+
+        </div>
+      </card>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="media justify-content-between my-4">
+        <div class="left-media  ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook "
+            viewBox="0 0 16 16">
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter "
+            viewBox="0 0 16 16">
+            <path
+              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram "
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+          </svg>
+        </div>
+        <div class="right-media">
+          <img src="./img/AppStore_lg30tv.png" alt="" width="100">
+          <img src="./img/GooglePlay_1_zixjxl.webp" alt="" width="100">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container ">
+      <div class="footer-part  pb-4 justify-content-between">
+        <div class="left">
+          <p>© 2003-2023 Chegg Inc. All rights reserved.</p>
+        </div>
+        <div class="right ">
+          <ul class="d-flex mx-2 list-unstyled flex-wrap">
+            <li class="px-2">Cookie Notice</li>
+            <li class="px-2">Your Privacy Choices</li>
+            <li class="px-2"><button class="text-success border-success px-2">Cookies Settings</button></li>
+            <li class="px-2">General Policies</li>
+            <li class="px-2">Privacy Policy (New)</li>
+            <li class="px-2">Honor Code</li>
+            <li class="px-2">IP Rights</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+.nav-link:hover {
+    border-bottom: 5px solid rgb(235, 113, 0);
+}
+
+
+.hero {
+    background-image: url('../img/1st.webp');
+    height: 60vh;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.first-heading {
+    font-size: 50px;
+    padding: 120px;
+}
+
+.content {
+    color: white;
+    width: 55vw;
+}
+
+.search {
+    width: 90%;
+    border-radius: 5px;
+    padding: 7px;
+    border: 2px solid rgb(198, 109, 25);
+}
+
+.search:hover {
+    border: 4px solid rgb(255, 123, 0);
+}
+
+.second-hero {
+    background-image: url('../img/5th.JPG');
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 16px;
+}
+
+.card-img {
+    position: relative;
+}
+
+.tag {
+    position: absolute;
+    top: 0;
+    background-color: rgb(255, 123, 0);
+    padding: 6px 12px;
+    border-radius: 5px 0 5px 0;
+    color: white;
+    font-size: 22px;
+}
+
+.search-container {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.search-box {
+    border-radius: 7px 0 0 7px;
+}
+
+.search-btn {
+    border-radius: 0 7px 7px 0;
+    font-size: 15px;
+}
+
+.course {
+    border-top: 6px solid rgb(255, 123, 0);
+    width: 9vw;
+}
+
+.nav-sep {
+    padding: 0px 10px 0 10px !important;
+    border-right: 2px solid gray;
+}
+
+.sep {
+    border-right: 2px solid gray;
+    cursor: pointer;
+}
+
+.fs-7 {
+    font-size: 15px;
+}
+
+.Questions {
+    border-bottom: 1px solid rgb(216, 211, 211);
+}
+
+.Question-Ans-Box {
+    width: 65%;
+    margin: 5px auto;
+    border: 2px solid gray;
+}
+
+.footer p {
+    font-size: 15px;
+}
+
+.media {
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gray;
+}
+
+.left-media svg {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.footer-part {
+    display: flex;
+}
+
+.footer-part li {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.left p {
+    font-size: 14px;
+}
+
+.right li {
+    gap: 1rem;
+}
+
+/* mobile screen */
+@media(max-width: 568px) {
+    .hero-lg-screen {
+        display: none;
+    }
+
+    .hero-mobile-screen {
+        display: block;
+    }
+
+    .hero-lg-screen-2 {
+        display: none;
+    }
+
+    .hero-mobile-screen-2 {
+        display: block;
+    }
+}
+
+/* larger Screens */
+@media(min-width: 568px) {
+
+    .hero-lg-screen {
+        display: block;
+    }
+
+    .hero-mobile-screen {
+        display: none;
+    }
+
+    .hero-lg-screen-2 {
+        display: block;
+    }
+
+    .hero-mobile-screen-2 {
+        display: none;
+    }
+}

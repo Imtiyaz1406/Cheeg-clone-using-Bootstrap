@@ -1,0 +1,16 @@
+ @import url('https://fonts.googleapis.com/css2?family=B612&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,700&family=Merriweather&family=Mouse+Memoirs&family=Oswald:wght@300&family=Poppins:ital@0;1&family=Roboto:wght@300&display=swap');
+ $font-family: "Aspira Webfont", Helvetica, Arial, sans-serif;
+ 
+ $theme-colors: (
+     "primary":    rgb(235, 113, 0),
+     "success":    green,
+     "info":       dodgerblue,
+     "warning":   yellow,
+     "danger":     red,
+     "light":     white,
+     "dark":      black,
+     "light-dark":  rgb(229, 221, 221)
+     );
+     
+     @import '../node_modules/bootstrap/scss/bootstrap.scss';
+    
