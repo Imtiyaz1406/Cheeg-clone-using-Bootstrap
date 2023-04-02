@@ -128,7 +128,7 @@
 }
 
 /* mobile screen */
-@media(max-width: 568px) {
+@media(max-width: 913px) {
     .hero-lg-screen {
         display: none;
     }
@@ -147,7 +147,7 @@
 }
 
 /* larger Screens */
-@media(min-width: 568px) {
+@media(min-width: 913px) {
 
     .hero-lg-screen {
         display: block;
